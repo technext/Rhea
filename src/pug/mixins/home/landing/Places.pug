@@ -1,0 +1,41 @@
+append variables
+  -
+    var items= [
+      {
+        image:'maldives.png',
+       
+      },
+      {
+        image:'growth.svg',
+       
+      },
+      {
+        image:'planting.svg',
+       
+      },
+
+    ];
+
+
+mixin Items(config) 
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
+        img.img-fluid.mb-4(src=`${CWD}assets/img/gallery/${config.image}` width="450"  alt='')
+      //- .swiper-slide Slide 2 
+    .swiper-pagination
+
+mixin Places
+  +Section.py-11
+    .row  
+      .col-md-6
+        .mt-4
+          .swiper-container.pb-4(data-pagination-target=id) 
+              .swiper-wrapper
+                  each item in items
+                      .swiper-slide.h-auto
+                          +Items(item) 
+          .swiper-pagination(id=id)  
+      .col-md-4
+        h1 Amazing places to enjoy your travel 
+        p Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui, varius vehicula ligula nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam ultrices nec. Cras nulla mauris, fermentum nec libero in.    
