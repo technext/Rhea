@@ -59,11 +59,13 @@
   }
 }
 
-//- testimonial background
 
-.bg-light-gradient {
-  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+//- Gradient
+
+.bg-dark-gradient {
+  background: linear-gradient(180deg, rgba(113, 110, 110, 0) 51%, rgba(30, 42, 70, 0.93) 99.07%);
 }
-.bg-primary-gradient{
-  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+
+.bg-light-gradient{
+  background: linear-gradient(181deg, rgba(113, 110, 110, 0) 35%, rgba(30, 45, 70, 0.93) 94.07%);
 }

@@ -2,40 +2,79 @@ append variables
   -
     var items= [
       {
-        image:'maldives.png',
-       
+        image:'maldives.jpg',
+        country:'Maldives',
+        price: '$860',
+        days:'3 days',
+
+      },
+
+      {
+        image:'kathmandu.png',
+        country:'Kathmandu, Nepal',
+        price: '$640',
+        days:'5 days',
+      },
+
+      {
+        image:'indonesia.png',
+        country:'Raja Ampat, Indonesia',
+        price: '$560',
+        days:'7 days',
+
       },
       {
-        image:'growth.svg',
-       
+        image:'maldives.jpg',
+        country:'Maldives',
+        price: '$860',
+        days:'3 days',
+
       },
+
       {
-        image:'planting.svg',
-       
+        image:'kathmandu.png',
+        country:'Kathmandu, Nepal',
+        price: '$640',
+        days:'5 days',
+      },
+
+      {
+        image:'indonesia.png',
+        country:'Raja Ampat, Indonesia',
+        price: '$560',
+        days:'7 days',
       },
 
     ];
 
 
-mixin Items(config) 
-  .swiper-container
-    .swiper-wrapper
-      .swiper-slide
-        img.img-fluid.mb-4(src=`${CWD}assets/img/gallery/${config.image}` width="450"  alt='')
-      //- .swiper-slide Slide 2 
-    .swiper-pagination
-
+mixin SliderCard({country,image,price,days})
+  .card.h-100.text-white
+    img.img-fluid(src=`${CWD}assets/img/gallery/${image}`   alt='').h-100.w-100
+    .card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-dark-gradient
+      .pt-3
+        span.badge.bg-primary !{price}
+      .ps-3.d-flex.justify-content-between.align-items-center  
+        h5.text-white !{country}
+        h6.text-600 !{days}
+     
 mixin Places
-  +Section.py-11
-    .row  
-      .col-md-6
-        .mt-4
-          .swiper-container.pb-4(data-pagination-target=id) 
-              .swiper-wrapper
-                  each item in items
-                      .swiper-slide.h-auto
-                          +Items(item) 
-          .swiper-pagination(id=id)  
+  +Section("container-lg").py-11
+    .row.flex-lg-center 
+      .col-md-8
+        div
+          .swiper-container.pb-4(data-swiper) 
+            .swiper-wrapper
+              each item in items
+                .swiper-slide.h-auto
+                  +SliderCard(item) 
+            .position-relative.mt-6           
+              .swiper-button-next(id=id style="left:90px;")
+              .swiper-button-prev(id=id)
+
       .col-md-4
-        h1 Amazing places to enjoy your travel 
-        p Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui, varius vehicula ligula nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam ultrices nec. Cras nulla mauris, fermentum nec libero in.    
+        h1.fw-bold.fs-md-3.fs-lg-4.fs-xl-5 Amazing places to enjoy your travel
+        hr.text-primary.my-4(style="height:3px; width:70px;") 
+        p.lh-lg Etiam facilisis, sapien quis porta dignissim, orci nisi pharetra dui, varius vehicula ligula nulla sit amet lorem. Aenean in vestibulum quam. Cras commodo varius neque, non gravida diam ultrices nec. Cras nulla mauris, fermentum nec libero in.
+        a.btn.btn-lg.btn-primary.hover-top(href='#' role='button')
+          | Explore

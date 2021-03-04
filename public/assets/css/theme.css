@@ -5189,8 +5189,8 @@ fieldset:disabled .btn {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.625rem;
+  border: 0 solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
 }
 
 .card > hr {
@@ -5205,14 +5205,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.625rem - 2px);
-  border-top-right-radius: calc(0.625rem - 2px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.625rem - 2px);
-  border-bottom-left-radius: calc(0.625rem - 2px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .card > .card-header + .list-group,
@@ -5252,21 +5252,21 @@ fieldset:disabled .btn {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
   background-color: #fafafa;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0 solid rgba(0, 0, 0, 0.125);
 }
 
 .card-header:first-child {
-  border-radius: calc(0.625rem - 2px) calc(0.625rem - 2px) 0 0;
+  border-radius: 0 0 0 0;
 }
 
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: #fafafa;
-  border-top: 2px solid rgba(0, 0, 0, 0.125);
+  border-top: 0 solid rgba(0, 0, 0, 0.125);
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.625rem - 2px) calc(0.625rem - 2px);
+  border-radius: 0 0 0 0;
 }
 
 .card-header-tabs {
@@ -5288,7 +5288,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.625rem - 2px);
+  border-radius: 0;
 }
 
 .card-img,
@@ -5299,14 +5299,14 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.625rem - 2px);
-  border-top-right-radius: calc(0.625rem - 2px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.625rem - 2px);
-  border-bottom-left-radius: calc(0.625rem - 2px);
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .card-group > .card {
@@ -5495,15 +5495,15 @@ fieldset:disabled .btn {
 
 .badge {
   display: inline-block;
-  padding: 0.35em 0.65em;
-  font-size: 0.75em;
+  padding: 0.45em 0.85em;
+  font-size: 0.95em;
   font-weight: 700;
   line-height: 1;
   color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 
 .badge:empty {
@@ -17574,15 +17574,15 @@ label {
   width: 100%;
 }
 
-.bg-light-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 240, 253, 0)), color-stop(14.32%, rgba(236, 240, 253, 0.53)), color-stop(45.83%, #ECF0FD), color-stop(84.33%, rgba(236, 240, 253, 0.43)), to(rgba(236, 240, 253, 0)));
-  background: -o-linear-gradient(top, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
-  background: linear-gradient(180deg, rgba(236, 240, 253, 0) 0%, rgba(236, 240, 253, 0.53) 14.32%, #ECF0FD 45.83%, rgba(236, 240, 253, 0.43) 84.33%, rgba(236, 240, 253, 0) 100%);
+.bg-dark-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(51%, rgba(113, 110, 110, 0)), color-stop(99.07%, rgba(30, 42, 70, 0.93)));
+  background: -o-linear-gradient(top, rgba(113, 110, 110, 0) 51%, rgba(30, 42, 70, 0.93) 99.07%);
+  background: linear-gradient(180deg, rgba(113, 110, 110, 0) 51%, rgba(30, 42, 70, 0.93) 99.07%);
 }
 
-.bg-primary-gradient {
-  background: -o-linear-gradient(241.82deg, #67C3F3 9.05%, #5A98F2 76.74%);
-  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+.bg-light-gradient {
+  background: -o-linear-gradient(269deg, rgba(113, 110, 110, 0) 35%, rgba(30, 45, 70, 0.93) 94.07%);
+  background: linear-gradient(181deg, rgba(113, 110, 110, 0) 35%, rgba(30, 45, 70, 0.93) 94.07%);
 }
 
 /* -------------------------------------------------------------------------- */
