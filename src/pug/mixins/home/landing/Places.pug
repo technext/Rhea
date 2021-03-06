@@ -2,10 +2,11 @@ append variables
   -
     var items= [
       {
-        image:'maldives.jpg',
+        image:'maldives.png',
         country:'Maldives',
         price: '$860',
         days:'3 days',
+       
 
       },
 
@@ -14,6 +15,7 @@ append variables
         country:'Kathmandu, Nepal',
         price: '$640',
         days:'5 days',
+       
       },
 
       {
@@ -21,10 +23,11 @@ append variables
         country:'Raja Ampat, Indonesia',
         price: '$560',
         days:'7 days',
+       
 
       },
       {
-        image:'maldives.jpg',
+        image:'maldives.png',
         country:'Maldives',
         price: '$860',
         days:'3 days',
@@ -50,7 +53,7 @@ append variables
 
 mixin SliderCard({country,image,price,days})
   .card.h-100.text-white
-    img.img-fluid(src=`${CWD}assets/img/gallery/${image}`   alt='').h-100.w-100
+    img.img-fluid(src=`${CWD}assets/img/gallery/${image}`  width='372'   alt='').h-100
     .card-img-overlay.ps-0.d-flex.flex-column.justify-content-between.bg-dark-gradient
       .pt-3
         span.badge.bg-primary !{price}
@@ -58,20 +61,44 @@ mixin SliderCard({country,image,price,days})
         h5.text-white !{country}
         h6.text-600 !{days}
      
-mixin Places
-  +Section("container-lg").py-11
+mixin Places(config)
+  +Section("container-lg")
     .row.flex-lg-center 
       .col-md-8
-        div
-          .swiper-container.pb-4(data-swiper) 
-            .swiper-wrapper
-              each item in items
-                .swiper-slide.h-auto
-                  +SliderCard(item) 
-            .position-relative.mt-6           
-              .swiper-button-next(id=id style="left:90px;")
-              .swiper-button-prev(id=id)
-
+        .overflow-hidden
+          .position-relative.rounded-top.overflow-hidden
+            .swiper-container.theme-slider(data-swiper!={
+              freeMode: true,
+              cssMode: false,
+              slideToClickedSlide : true,
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+              breakpoints: {
+                  670: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  670: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1200: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                  },
+                }
+            })
+              .swiper-wrapper
+                each item in items
+                  .swiper-slide.h-auto 
+                    +SliderCard(item) 
+              
+              .swiper-nav
+                .swiper-button-next.swiper-button-white
+                .swiper-button-prev.swiper-button-white
+      
       .col-md-4
         h1.fw-bold.fs-md-3.fs-lg-4.fs-xl-5 Amazing places to enjoy your travel
         hr.text-primary.my-4(style="height:3px; width:70px;") 
