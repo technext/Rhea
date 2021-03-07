@@ -1,51 +1,51 @@
 mixin FeatureVideos
   +Section.pt-5
     .row.flex-center.mb-5
-      .col-12.text-center 
+      .col-8.text-center 
         h1.fw-bold.fs-md-3.fs-lg-4.fs-xl-5 Featured videos
         hr.mx-auto.text-primary.my-4(style="height:3px; width:70px;")
         p.mx-auto Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend malesuada magna, at imperdiet justo euismod eu. Aliquam vel imperdet mi, et convallis eros. Duis fermentum fringilla nisl at vulputate. Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis et arcu.
 
     .row.align-items-center
       .col-9
-        #galleryTop
-          .swiper-container.theme-slider.all-0.gallery-top(data-swiper!={
-            autoHeight:true,
-            loop: true, 
-            loopedSlides: 5,
-            thumb: {
-              spaceBetween: 5,
-              slidesPerView: 5,
-              loop: true,
-              freeMode: true,
-              grabCursor: true,
-              loopedSlides: 5, 
-              centeredSlides: true,
-              slideToClickedSlide: true,
-              watchSlidesVisibility: true,
-              watchSlidesProgress: true,
-              parent: '#galleryTop'
-            },
-            slideToClickedSlide: true,
-          })
+        //- #galleryTop
+        //-   .swiper-container.theme-slider.all-0.gallery-top(data-swiper!={
+        //-     autoHeight:true,
+        //-     loop: true, 
+        //-     loopedSlides: 5,
+        //-     thumb: {
+        //-       spaceBetween: 5,
+        //-       slidesPerView: 5,
+        //-       loop: true,
+        //-       freeMode: true,
+        //-       grabCursor: true,
+        //-       loopedSlides: 5, 
+        //-       centeredSlides: true,
+        //-       slideToClickedSlide: true,
+        //-       watchSlidesVisibility: true,
+        //-       watchSlidesProgress: true,
+        //-       parent: '#galleryTop'
+        //-     },
+        //-     slideToClickedSlide: true,
+        //-   })
 
-            .swiper-wrapper
-              .swiper-slide.h-100
-                .ratio.ratio-16x9
-                  iframe(src='https://www.youtube.com/embed/XhCkptbe7Z4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-              .swiper-slide.h-100
-                .ratio.ratio-16x9
-                   iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-              .swiper-slide.h-100
-                .ratio.ratio-16x9  
-                  iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-              .swiper-slide.h-100  
-                img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100
-              .swiper-slide.h-100  
-                img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100 
-              .swiper-slide.h-100  
-                img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100  
-            .swiper-nav
-              .swiper-button-next.swiper-button-white
-              .swiper-button-prev.swiper-button-white
+        //-     .swiper-wrapper
+        //-       .swiper-slide.h-100
+        //-         .ratio.ratio-16x9
+        //-           iframe(src='https://www.youtube.com/embed/XhCkptbe7Z4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //-       .swiper-slide.h-100
+        //-         .ratio.ratio-16x9
+        //-            iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //-       .swiper-slide.h-100
+        //-         .ratio.ratio-16x9  
+        //-           iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+        //-       .swiper-slide.h-100  
+        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100
+        //-       .swiper-slide.h-100  
+        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100 
+        //-       .swiper-slide.h-100  
+        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100  
+        //-     .swiper-nav
+        //-       .swiper-button-next.swiper-button-white
+        //-       .swiper-button-prev.swiper-button-white
               

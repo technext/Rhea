@@ -65,39 +65,47 @@ mixin Places(config)
   +Section("container-lg")
     .row.flex-lg-center 
       .col-md-8
-        .overflow-hidden
-          .position-relative.rounded-top.overflow-hidden
-            .swiper-container.theme-slider(data-swiper!={
-              freeMode: true,
-              cssMode: false,
-              slideToClickedSlide : true,
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-              breakpoints: {
-                  670: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  670: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
-                  },
-                }
-            })
-              .swiper-wrapper
-                each item in items
-                  .swiper-slide.h-auto 
-                    +SliderCard(item) 
+        .swiper-container.pb-4(data-swiper) 
+          .swiper-wrapper
+            each item in items
+              .swiper-slide.h-100
+                +SliderCard(item) 
+          .position-relative.mt-6           
+            .swiper-button-next(id=id style="left:90px;")
+            .swiper-button-prev(id=id)
+        //- .overflow-hidden
+        //-   .position-relative.rounded-top.overflow-hidden
+        //-     .swiper-container.theme-slider(data-swiper!={
+        //-       freeMode: true,
+        //-       cssMode: false,
+        //-       slideToClickedSlide : true,
+        //-       navigation: {
+        //-         nextEl: ".swiper-button-next",
+        //-         prevEl: ".swiper-button-prev",
+        //-       },
+        //-       breakpoints: {
+        //-           670: {
+        //-             slidesPerView: 2,
+        //-             spaceBetween: 20,
+        //-           },
+        //-           670: {
+        //-             slidesPerView: 2,
+        //-             spaceBetween: 20,
+        //-           },
+        //-           1200: {
+        //-             slidesPerView: 3,
+        //-             spaceBetween: 50,
+        //-           },
+        //-         }
+        //-     })
+        //-       .swiper-wrapper
+        //-         each item in items
+        //-           .swiper-slide.h-auto 
+        //-             +SliderCard(item) 
               
-              .swiper-nav
-                .swiper-button-next.swiper-button-white
-                .swiper-button-prev.swiper-button-white
+        //-       .swiper-nav
+        //-         .swiper-button-next.swiper-button-white(id=id)
+        //-         .swiper-button-prev.swiper-button-white(id=id)
       
       .col-md-4
         h1.fw-bold.fs-md-3.fs-lg-4.fs-xl-5 Amazing places to enjoy your travel

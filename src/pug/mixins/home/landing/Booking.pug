@@ -6,20 +6,26 @@ mixin Booking(config)
       h2.text-500 WE WILL SEE YOU
       h1.text-white.fs-7.fw-bold Enjoy 30% Off On First Trip
 
-      form.row.gy-2.gx-3.align-items-center
+      form.row.gy-2.gx-3.align-items-center.my-4
         .col-auto
-          label.visually-hidden(for='autoSizingInput') Name
-          input#autoSizingInput.form-control(type='text' placeholder='Jane Doe')
-        .col-auto
-          label.visually-hidden(for='autoSizingInputGroup') Username
-          input#autoSizingInputGroup.form-control(type='text' placeholder='Username')
-        .col-auto
-          label.visually-hidden(for='autoSizingSelect') Preference
+          label.visually-hidden(for='autoSizingSelect') Destinations
           select#autoSizingSelect.form-select
-            option(selected='') Choose...
+            option(selected='')  Destinations
             option(value='1') One
             option(value='2') Two
             option(value='3') Three
+        .col-auto
+          label.visually-hidden(for='autoSizingSelect') Package
+          select#autoSizingSelect.form-select
+            option(selected='') Package
+            option(value='1') One
+            option(value='2') Two
+            option(value='3') Three
+        .col-auto
+          label.visually-hidden(for='example-date-input') Date
+          .input-group 
+            input#example-date-input.form-control(type='date' value='Dates')
+
         
         .col-auto
-          button.btn.btn-primary(type='submit') Submit
+          button.btn.btn-lg.btn-primary.px-6(type='submit') Book Now

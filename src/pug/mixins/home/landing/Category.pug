@@ -39,7 +39,7 @@ mixin CategoryCard(config)
   .card.h-100.text-white
     img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}`   alt='')
     .card-img-overlay.d-flex.align-items-end.bg-dark-gradient
-      h5.text-white=config.category
+      h5.text-white.fs--1=config.category
         
 mixin Category
   +Section.pt-5
@@ -50,7 +50,41 @@ mixin Category
         p.mx-auto Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper blandit vitae et felis. Morbi ante urna, imperdiet vel neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed commodo. Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut, scelerisque volutpat diam.
     
     .row.h-100 
-      .col-12
+      .row.flex-lg-center 
+        .col-md-12
+          //- .overflow-hidden
+          //-   .position-relative.rounded-top.overflow-hidden
+          //-     .swiper-container.theme-slider(data-swiper!={
+          //-       freeMode: true,
+          //-       cssMode: false,
+          //-       slideToClickedSlide : true,
+          //-       navigation: {
+          //-         nextEl: ".swiper-button-next",
+          //-         prevEl: ".swiper-button-prev",
+          //-       },
+          //-       breakpoints: {
+          //-           670: {
+          //-             slidesPerView: 2,
+          //-             spaceBetween: 20,
+          //-           },
+          //-           670: {
+          //-             slidesPerView: 2,
+          //-             spaceBetween: 20,
+          //-           },
+          //-           1200: {
+          //-             slidesPerView: 5,
+          //-             spaceBetween: 50,
+          //-           },
+          //-         }
+          //-     })
+          //-       .swiper-wrapper
+          //-         each category in categories
+          //-           .swiper-slide.h-auto 
+          //-             +CategoryCard(category) 
+                
+          //-       .swiper-nav
+          //-         .swiper-button-next.swiper-button-white(id=id)
+          //-         .swiper-button-prev.swiper-button-white(id=id)
         //- .swiper-container.pb-4(data-swiper) 
         //-   .swiper-wrapper
         //-     each category in categories
