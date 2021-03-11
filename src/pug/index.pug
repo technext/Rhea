@@ -5,18 +5,17 @@ include mixins/home/landing/FeatureVideos
 include mixins/home/landing/Category
 include mixins/home/landing/Travellers
 include mixins/home/landing/Booking
-//- include mixins/home/landing/Footer
+include mixins/home/landing/Footer
 
 
 append variables
   - var currentPage = 'index'
 
 prepend styles
-  link(href=`${CWD}vendors/swiper/swiper-bundle.min.css`, rel='stylesheet')
+  link(href=`${CWD}vendors/plyr/plyr.css`, rel='stylesheet')
 
 prepend scripts
-  script(src=`${CWD}vendors/swiper/swiper-bundle.min.js`)
-  
+  script(src=`${CWD}vendors/plyr/plyr.polyfilled.min.js`)
 
 append content
   +HeroHeader
@@ -25,5 +24,4 @@ append content
   +Category
   +Travellers
   +Booking
-  
-  //- +Footer
+  +Footer

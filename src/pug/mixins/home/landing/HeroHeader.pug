@@ -1,11 +1,11 @@
 mixin HeroHeader
   section.py-0
-    +Background({ image: `${CWD}assets/img/illustrations/hero.png`, attrs: { style: { 'background-position':'right bottom', 'background-size': 'contain', } }, className: 'mt-8' }) 
+    +Background({ image: `${CWD}assets/img/illustrations/hero.png`, attrs: { style: { 'background-position':'right bottom', 'background-size': 'contain', } }, className: 'd-none d-md-block' }) 
     .container.position-relative
-      .row.align-items-center.min-vh-75
+      .row.align-items-center.min-vh-75.my-lg-8
         //- .col-md-5.col-lg-6.order-md-1.text-center.text-md-end
         //-   img.img-fluid(src=`${CWD}assets/img/illustrations/mobile.png` width="350"  alt='')
-        .col-md-7.col-lg-6.text-center.text-md-start.py-11
+        .col-md-7.col-lg-6.text-center.text-md-start.py-8
           h1.mb-4.display-1.lh-sm Travel around 
             br.d-block.d-lg-none.d-xl-block
             | the world

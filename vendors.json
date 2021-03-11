@@ -19,8 +19,8 @@
     "dest": "is"
   },
 
-  "swiper": {
-    "src": ["swiper-bundle.min.js", "swiper-bundle.min.css"],
-    "dest": "swiper"
+  "plyr": {
+    "src": ["dist/plyr.polyfilled.min.js", "dist/plyr.css"],
+    "dest": "plyr"
   }
 }

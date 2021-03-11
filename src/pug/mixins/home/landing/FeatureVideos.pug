@@ -1,51 +1,69 @@
 mixin FeatureVideos
   +Section.pt-5
     .row.flex-center.mb-5
-      .col-8.text-center 
+      .col-lg-8.text-center 
         h1.fw-bold.fs-md-3.fs-lg-4.fs-xl-5 Featured videos
         hr.mx-auto.text-primary.my-4(style="height:3px; width:70px;")
         p.mx-auto Aliquam sodales vitae ex tincidunt consectetur. Etiam eleifend malesuada magna, at imperdiet justo euismod eu. Aliquam vel imperdet mi, et convallis eros. Duis fermentum fringilla nisl at vulputate. Nunc nec lorem faucibus, molestie nisi id, elementum sem. Sed vulputate tempor augue a efficitur urna, ultrices eu. Duis vel turpis et arcu.
 
-    .row.align-items-center
-      .col-9
-        //- #galleryTop
-        //-   .swiper-container.theme-slider.all-0.gallery-top(data-swiper!={
-        //-     autoHeight:true,
-        //-     loop: true, 
-        //-     loopedSlides: 5,
-        //-     thumb: {
-        //-       spaceBetween: 5,
-        //-       slidesPerView: 5,
-        //-       loop: true,
-        //-       freeMode: true,
-        //-       grabCursor: true,
-        //-       loopedSlides: 5, 
-        //-       centeredSlides: true,
-        //-       slideToClickedSlide: true,
-        //-       watchSlidesVisibility: true,
-        //-       watchSlidesProgress: true,
-        //-       parent: '#galleryTop'
-        //-     },
-        //-     slideToClickedSlide: true,
-        //-   })
+    .row.flex-center
+      .col-12
+        #carouselExampleIndicators.carousel.slide(data-bs-touch="false" data-bs-interval="false")
+          .row.align-items-center
+            .col-12.col-xxl-7.px-2
+              .carousel-inner
+                .carousel-item.active.h-100
+                  .player(data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe( width="865" height="478" src='https://www.youtube.com/embed/zLeLttVbFs8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen=''  )
+                .carousel-item
+                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe(width="865" height="478" src='https://www.youtube.com/embed/nUI8f_hvKZw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .carousel-item
+                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe(src='https://www.youtube.com/embed/xf86EzuLXu0' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                .carousel-item
+                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe(src='https://www.youtube.com/embed/YkEd_aorIiI' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
 
-        //-     .swiper-wrapper
-        //-       .swiper-slide.h-100
-        //-         .ratio.ratio-16x9
-        //-           iframe(src='https://www.youtube.com/embed/XhCkptbe7Z4' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-        //-       .swiper-slide.h-100
-        //-         .ratio.ratio-16x9
-        //-            iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-        //-       .swiper-slide.h-100
-        //-         .ratio.ratio-16x9  
-        //-           iframe(width='560' height='315' src='https://www.youtube.com/embed/LCqK7wZd2Pk' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-        //-       .swiper-slide.h-100  
-        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100
-        //-       .swiper-slide.h-100  
-        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100 
-        //-       .swiper-slide.h-100  
-        //-         img(src=`${CWD}assets/img/gallery/maldives.jpg` alt="").rounded.fit-cover.h-100.w-100  
-        //-     .swiper-nav
-        //-       .swiper-button-next.swiper-button-white
-        //-       .swiper-button-prev.swiper-button-white
-              
+            .col-6.col-xxl-2
+              .carousel-indicators
+                .row.h-100.w-100
+                  .col-12.px-1.py-2
+                    button.active.mb-3(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                      img.d-block(src=`${CWD}assets/img/gallery/maldives-v.png`  alt='...')    
+                  .col-12.px-1
+                    button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
+                      img.d-block(src=`${CWD}assets/img/gallery/tanzania.png`   alt='...')
+                  .col-12.px-1  
+                    button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='2' aria-label='Slide 3')
+                      img.d-block(src=`${CWD}assets/img/gallery/kathmandu-v.png`   alt='...')
+                  .col-12.px-1  
+                    button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3' aria-label='Slide 4')
+                      img.d-block(src=`${CWD}assets/img/gallery/chaina.png`   alt='...') 
+            .col-6.col-xxl-3.d-none.d-sm-block
+              .row
+                .col-12.mt-2
+                  .card.h-100.bg-light.active(style="min-height:118px")
+                    .card-body.d-flex.flex-column.justify-content-center
+                      p.mb-0.fw-semi-bold.text-dark  When go to maldives
+                      p.card-text
+                        small.text-800 0.20
+                .col-12.mb-2
+                  .card.h-100(style="min-height:118px")
+                    .card-body.d-flex.flex-column.justify-content-center
+                      p.mb-0.fw-semi-bold.text-dark Tanzania’s deadly pink lake
+                      p.card-text
+                        small.text-800 05.24
+                .col-12.mb-2
+                  .card.h-100(style="min-height:118px")
+                    .card-body.d-flex.flex-column.justify-content-center
+                      p.mb-0.fw-semi-bold.text-dark  Top things to do in Kathmandu
+                      p.card-text
+                        small.text-800 06.12
+                .col-12
+                  .card.h-100(style="min-height:118px")
+                    .card-body.d-flex.flex-column.justify-content-center
+                      p.mb-0.fw-semi-bold.text-dark  Exploring China’s creative capital
+                      p.card-text
+                        small.text-800 0.20   
+        

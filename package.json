@@ -1,5 +1,5 @@
 {
-  "name": "trafalgar",
+  "name": "rhea",
   "version": "1.0.0",
   "description": "Landing, Corporate & Business Template",
   "main": "gulpfile.js",
@@ -57,7 +57,7 @@
     "@popperjs/core": "^2.6.0",
     "bootstrap": "5.0.0-beta2",
     "is_js": "^0.9.0",
-    "swiper": "^6.4.15"
+    "plyr": "^3.6.4"
   },
   "browserslist": [
     "last 5 version"

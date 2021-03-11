@@ -419,15 +419,15 @@ $card-cap-bg: tint-color($gray-500, 90%) !default;
 //-----------------------------------------------*/
 $carousel-control-opacity: 0.9 !default;
 $carousel-control-hover-opacity: 0.9 !default;
-$carousel-control-color: $light !default;
+$carousel-control-color: $gray-600 !default;
 
 $carousel-indicator-active-bg: $primary !default;
-$carousel-indicator-width: 9px !default;
-$carousel-indicator-height: 9px !default;
+$carousel-indicator-width: 22px !default;
+$carousel-indicator-height: 3px !default;
 $carousel-indicator-hit-area-height: 0 !default;
 
-$carousel-control-prev-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z'/%3E%3C/svg%3E") !default;
-$carousel-control-next-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") !default;
+$carousel-control-prev-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z'/%3E%3C/svg%3E") !default;
+$carousel-control-next-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='#{$carousel-control-color}' class='bi bi-arrow-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'/%3E%3C/svg%3E") !default;
 
 // Accordion
 $accordion-padding-y: 1.5rem !default;
@@ -456,3 +456,14 @@ $badge-font-size:                   .95em !default;
 $badge-padding-y:                   .45em !default;
 $badge-padding-x:                   .85em !default;
 $badge-border-radius:               0 !default;
+
+
+// Forms
+$input-bg:                             transparent !default;
+$form-select-color:                 $gray-600 !default;
+$input-color:                       $gray-600 !default;
+$form-select-indicator-color:       $gray-600 !default;
+$form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !default;
+$form-select-border-radius:         0 !default;
+
+$input-border-radius:               0 !default;

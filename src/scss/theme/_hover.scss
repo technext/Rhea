@@ -1,11 +1,11 @@
 /* Hover */
-.hover-top {
+.hover-top{
   transform: translateY(0) translateZ(0);
   transition: all 0.5s ease;
   &.hover-top-shadow-lg {
     &:hover,
     &:focus {
-      transform: translateY(-0.3125rem) translateZ(0);
+      transform: translateY(-0.8125rem) translateZ(0);
     }
   }
   &:hover,

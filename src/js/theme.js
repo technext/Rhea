@@ -1,7 +1,7 @@
 import { docReady } from './utils';
 import navbarInit from './bootstrap-navbar';
 import detectorInit from './detector';
-import swiperInit from './swiper';
+import plyrInit from './plyr';
 
 // /* -------------------------------------------------------------------------- */
 // /*                            Theme Initialization                            */
@@ -9,5 +9,5 @@ import swiperInit from './swiper';
 
 docReady(navbarInit);
 docReady(detectorInit);
-docReady(swiperInit);
+docReady(plyrInit);
 
