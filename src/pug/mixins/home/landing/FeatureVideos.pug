@@ -14,23 +14,23 @@ mixin FeatureVideos
               .carousel-inner
                 .carousel-item.active.h-100
                   .player(data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
-                    iframe( width="865" height="478" src='https://www.youtube.com/embed/zLeLttVbFs8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen=''  )
+                    iframe(  src='https://www.youtube.com/embed/zLeLttVbFs8' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen=''  )
                 .carousel-item
-                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
-                    iframe(width="865" height="478" src='https://www.youtube.com/embed/nUI8f_hvKZw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                  .player( data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe( src='https://www.youtube.com/embed/nUI8f_hvKZw' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
                 .carousel-item
-                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
-                    iframe(src='https://www.youtube.com/embed/xf86EzuLXu0' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                  .player( data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe(src='https://www.youtube.com/embed/xf86EzuLXu0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
                 .carousel-item
-                  .player(width="865" height="478" data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
-                    iframe(src='https://www.youtube.com/embed/YkEd_aorIiI' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
-
-            .col-6.col-xxl-2
+                  .player( data-plyr-provider='youtube' data-plyr-embed-id='bTqVqk7FSmY')
+                    iframe(src='https://www.youtube.com/embed/YkEd_aorIiI' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            
+            .col-6.col-md-3.col-xxl-2.pt-3.pt-md-0
               .carousel-indicators
                 .row.h-100.w-100
-                  .col-12.px-1.py-2
-                    button.active.mb-3(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
-                      img.d-block(src=`${CWD}assets/img/gallery/maldives-v.png`  alt='...')    
+                  .col-12.px-1
+                    button.active(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+                      img.d-block(src=`${CWD}assets/img/gallery/maldives-v.png`  alt='...')   
                   .col-12.px-1
                     button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='1' aria-label='Slide 2')
                       img.d-block(src=`${CWD}assets/img/gallery/tanzania.png`   alt='...')
@@ -40,30 +40,31 @@ mixin FeatureVideos
                   .col-12.px-1  
                     button(type='button' data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3' aria-label='Slide 4')
                       img.d-block(src=`${CWD}assets/img/gallery/chaina.png`   alt='...') 
-            .col-6.col-xxl-3.d-none.d-sm-block
+            
+            .col-6.col-lg-3.px-xxl-0
               .row
-                .col-12.mt-2
-                  .card.h-100.bg-light.active(style="min-height:118px")
+                .col-12.col-md-11.col-lg-12.col-xl-10.col-xxl-7.px-xxl-0.ps-lg-0.ps-md-4
+                  .card.h-100.py-md-2.active(style="min-height:113px")
                     .card-body.d-flex.flex-column.justify-content-center
                       p.mb-0.fw-semi-bold.text-dark  When go to maldives
                       p.card-text
                         small.text-800 0.20
-                .col-12.mb-2
-                  .card.h-100(style="min-height:118px")
+                .col-12.col-md-11.col-lg-12.col-xl-10.col-xxl-7.px-xxl-0.ps-lg-0.ps-md-4
+                  .card.h-100.py-md-2(style="min-height:113px")
                     .card-body.d-flex.flex-column.justify-content-center
-                      p.mb-0.fw-semi-bold.text-dark Tanzania’s deadly pink lake
+                      p.mb-0.fw-semi-bold.text-500 Tanzania’s deadly pink lake
                       p.card-text
                         small.text-800 05.24
-                .col-12.mb-2
-                  .card.h-100(style="min-height:118px")
+                .col-12.col-md-11.col-lg-12.col-xl-10.col-xxl-7.px-xxl-0.ps-lg-0.ps-md-4
+                  .card.h-100.py-md-2(style="min-height:113px")
                     .card-body.d-flex.flex-column.justify-content-center
-                      p.mb-0.fw-semi-bold.text-dark  Top things to do in Kathmandu
+                      p.mb-0.fw-semi-bold.text-500  Top things to do in Kathmandu
                       p.card-text
                         small.text-800 06.12
-                .col-12
-                  .card.h-100(style="min-height:118px")
+                .col-12.col-md-11.col-lg-12.col-xl-10.col-xxl-7.px-xxl-0.ps-lg-0.ps-md-4
+                  .card.h-100.py-md-3(style="min-height:113px")
                     .card-body.d-flex.flex-column.justify-content-center
-                      p.mb-0.fw-semi-bold.text-dark  Exploring China’s creative capital
+                      p.mb-0.fw-semi-bold.text-500  Exploring China’s creative capital
                       p.card-text
                         small.text-800 0.20   
         
