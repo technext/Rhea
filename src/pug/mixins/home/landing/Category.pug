@@ -1,5 +1,5 @@
 mixin CategoryCard(config)
-  .col-6.col-sm-4.col-xl-2.mb-4.hover-top.px-2
+  .col-6.col-sm-4.col-xl-2.mb-3.hover-top.px-2
     .card.h-100.w-100.text-white
       a(href='!#').stretched-link
         img.img-fluid(src=`${CWD}assets/img/gallery/${config.image}`  alt='')
@@ -14,7 +14,7 @@ mixin Category
         hr.mx-auto.text-primary.my-4(style="height:3px; width:70px;")
         p.mx-auto Maecenas et eros non quam ultricies interdum. Proin ac dolor vel neque ullamcorper blandit vitae et felis. Morbi ante urna, imperdiet vel neque vitae, porta ullamcorper metus. Quisque bibendum venenatis eros sed commodo. Nullam ultrices tortor non diam ullamcorper auctor. In urna tellus, auctor sit amet est ut, scelerisque volutpat diam.
     
-    .row.h-100 
+    .row.h-100.flex-center 
       .row.flex-lg-center 
         .col-md-12
           #carouselCategory.carousel.slide(data-bs-touch="false" data-bs-interval="false")
