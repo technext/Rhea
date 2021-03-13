@@ -8,11 +8,9 @@ mixin PlacesCard(config)
         .ps-3.d-flex.justify-content-between.align-items-center  
           h5.text-white=config.country
           h6.text-600=config.days
-
-
-     
+   
 mixin Places(config)
-  +Section
+  +Section#places
     .row.flex-md-center
       .col-md-11.col-lg-4.py-md-3.px-4.px-md-3.px-lg-0.px-xl-2.order-lg-1
         h1.fw-bold.fs-md-3.fs-xl-5 Amazing places to enjoy your travel
@@ -50,48 +48,4 @@ mixin Places(config)
               span.carousel-control-next-icon(aria-hidden='true')
               span.visually-hidden Next
 
-        //- .swiper-container.pb-4(data-swiper!={
-        //-   slidesPerView: 3,
-        //- }) 
-        //-   .swiper-wrapper
-        //-     each place in places
-        //-       .swiper-slide.h-100
-        //-         +SliderCard(place) 
-        //-   .position-relative.mt-6           
-        //-     .swiper-button-next(id=id style="left:90px;")
-        //-     .swiper-button-prev(id=id)
-        //- .overflow-hidden
-        //-   .position-relative.rounded-top.overflow-hidden
-        //-     .swiper-container.theme-slider(data-swiper!={
-        //-       freeMode: true,
-        //-       cssMode: false,
-        //-       slideToClickedSlide : true,
-        //-       navigation: {
-        //-         nextEl: ".swiper-button-next",
-        //-         prevEl: ".swiper-button-prev",
-        //-       },
-        //-       breakpoints: {
-        //-           670: {
-        //-             slidesPerView: 2,
-        //-             spaceBetween: 20,
-        //-           },
-        //-           670: {
-        //-             slidesPerView: 2,
-        //-             spaceBetween: 20,
-        //-           },
-        //-           1200: {
-        //-             slidesPerView: 3,
-        //-             spaceBetween: 50,
-        //-           },
-        //-         }
-        //-     })
-        //-       .swiper-wrapper
-        //-         each item in items
-        //-           .swiper-slide.h-auto 
-        //-             +SliderCard(item) 
-              
-        //-       .swiper-nav
-        //-         .swiper-button-next.swiper-button-white(id=id)
-        //-         .swiper-button-prev.swiper-button-white(id=id)
-      
-      
+        

@@ -461,7 +461,7 @@ $badge-border-radius:               0 !default;
 // Forms
 $input-bg:                             transparent !default;
 $form-select-color:                 $gray-600 !default;
-$input-color:                       $gray-600 !default;
+$input-color:                       $gray-100 !default;
 $form-select-indicator-color:       $gray-600 !default;
 $form-select-indicator:             url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>") !default;
 $form-select-border-radius:         0 !default;

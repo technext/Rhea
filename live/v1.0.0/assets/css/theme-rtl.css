@@ -2542,7 +2542,7 @@ progress {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #c3c1c8;
+  color: #f5f7fa;
   background-color: transparent;
   background-clip: padding-box;
   border: 1px solid #d7d6da;
@@ -2574,7 +2574,7 @@ progress {
 }
 
 .form-control:focus {
-  color: #c3c1c8;
+  color: #f5f7fa;
   background-color: transparent;
   border-color: #9cc2f9;
   outline: 0;
@@ -2621,7 +2621,7 @@ progress {
   margin: -0.56rem -0.8rem;
   -webkit-margin-end: 0.8rem;
   margin-inline-end: 0.8rem;
-  color: #c3c1c8;
+  color: #f5f7fa;
   background-color: #ebebed;
   pointer-events: none;
   border-color: inherit;
@@ -2653,7 +2653,7 @@ progress {
   margin: -0.56rem -0.8rem;
   -webkit-margin-end: 0.8rem;
   margin-inline-end: 0.8rem;
-  color: #c3c1c8;
+  color: #f5f7fa;
   background-color: #ebebed;
   pointer-events: none;
   border-color: inherit;
@@ -3217,7 +3217,7 @@ textarea.form-control-lg {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #c3c1c8;
+  color: #f5f7fa;
   text-align: center;
   white-space: nowrap;
   background-color: #ebebed;
